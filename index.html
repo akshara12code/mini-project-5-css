@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Salsa&family=Style+Script&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Salsa&display=swap"
+      rel="stylesheet"
+     
+    />
+    
+  </head>
+  <body>
+    <section class="hero-section">
+      <img class="yoo" src="./images/design-5 1.png" alt="" />
+
+      <p>
+        Hi,<span id="receiver"></span>
+        <br />
+        You mean the world to me... So this Diwali, I made something for you!
+      </p>
+      <div class="yo">
+        <img
+          width="35px"
+          height="35px"
+          src="./images/musical-note.png"
+          alt=""
+        />
+        <span class="soulful"> &nbsp;&nbsp; SoulFul Music &nbsp;&nbsp;</span>
+        <img class="music" src="./images/Group 5.png" alt="" />
+        <audio
+          src="./images/festival-of-lights-india-diwali-celebration-indian-music-246606.mp3"
+          controls
+          autoplay
+        ></audio>
+      </div>
+
+      <img class="deepak first" src="./images/deepak 2.png" alt="" />
+      <img class="deepak second" src="./images/deepak 2.png" alt="" />
+    </section>
+
+    <section class="lakshmi">
+      <div class="devider">
+        <div class="line"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="line"></div>
+      </div>
+      <img
+        class="ganesha"
+        src="./images/lakshmi maa and ganesh ji 1.png"
+        alt=""
+      />
+      <h1>Wishing You a Blessed and Prosperous Deepawali</h1>
+
+      <div class="devider">
+        <div class="line"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="line"></div>
+      </div>
+      <div class="container">
+      <div class="white-card">
+        <p class="one">People say, “Diwali is the festival of lights.”</p>
+        <p class="two">You know what, I can feel the positivity and happiness. My goal is to learn web development and I’m learning everyday, even today!</p>
+      </div>
+      <img class="girl" src="./images/little-girl 1.png" alt="">
+    </div>
+    </section>
+    <section class="final">
+        <div class="devider">
+            <div class="line"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="line"></div>
+          </div>
+          <img src="./images/Group 15.png" alt="" class="final-img">
+          <div class="final-line"><h2>Happy Diwali and,</h2>
+          <p class="helo" >Thankyou for Everything......</p>
+        </div>
+      <span class="love">
+            Made with 💛 by Akshara Srivastava
+        </span>
+      
+    </section>
+<script>
+    const receiverName = document.querySelector("#receiver");
+const senderName = document.querySelector("#sender");
+receiverName.innerText = new URLSearchParams(location.search).get("receiver");
+senderName.innerText = new URLSearchParams(location.search).get("sender") || 'Anurag';
+</script>
+    
+  </body>
+</html>
